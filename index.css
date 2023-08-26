@@ -13,6 +13,7 @@ body{
     display: flex;
     justify-content: center;
     position: fixed;
+    box-shadow: rgb(15, 33, 46) 0px 4px 6px -1px;
 
 }
 
@@ -21,7 +22,6 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    background-color: rgb(33, 55, 68);
     height: auto;
 
 }
