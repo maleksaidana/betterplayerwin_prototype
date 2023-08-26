@@ -63,7 +63,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #465a72;
+    background-color: rgb(40, 66, 82);
     border-radius: 50%;
 }
 
@@ -71,4 +71,8 @@ body{
     background-color: #465a72;
     border-radius: 10px;
 
+}
+
+.anchor:hover{
+    background-color: #465a72;
 }
