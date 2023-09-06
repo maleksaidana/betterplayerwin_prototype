@@ -1,14 +1,13 @@
-body{
+body {
     width: 100%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     background-color: rgb(26, 44, 57);
-    height:1500px;
 }
 
-.container{
+.container {
     width: 100%;
-    height: auto; 
+    height: auto;
     background-color: rgb(33, 55, 68);
     display: flex;
     justify-content: center;
@@ -17,37 +16,35 @@ body{
 
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: auto;
 
 }
 
-.element{
+.element {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: rgb(177, 186, 210);
     height: 59px;
-
-}
-
-.gap-15{
     gap: 15px;
 
+
 }
 
-.active{
-    border-bottom: 4px solid  rgb(51, 144, 255);
+.active {
+    border-bottom: 4px solid rgb(51, 144, 255);
     width: 50%;
     background-color: rgb(33, 55, 68) !important;
     border-radius: 0px !important;
 
 }
-.link{
+
+.link {
     width: 120px;
     height: 50px;
     cursor: pointer;
@@ -56,7 +53,7 @@ body{
     align-items: center;
 }
 
-.anchor{
+.anchor {
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -67,12 +64,68 @@ body{
     border-radius: 50%;
 }
 
-.link:hover{
+.link:hover {
     background-color: #465a72;
     border-radius: 10px;
 
 }
 
-.anchor:hover{
+.anchor:hover {
     background-color: #465a72;
+}
+
+/*RIGHT MENU */
+
+.right-navbar {
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 59px;
+    flex-direction: column;
+    width: auto;
+    background-color: rgb(15, 33, 46);
+}
+
+.right-item {
+    padding: 8px;
+}
+
+.right-card {
+    overflow: hidden;
+    border-radius: 30%;
+    cursor: pointer;
+    background-color: rgb(40, 66, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-card:hover {
+    opacity: 0.5;
+}
+
+.right-card img {
+    width: 45px;
+
+}
+
+.right-card {
+    min-height: 45px;
+}
+
+.active-right-item {
+    border-right: 4px solid rgb(51, 144, 255);
+
+}
+
+@media (max-width: 1024px) {
+    .right-navbar {
+        display: none;
+    }
+
+    .header .middle {
+        display: none;
+    }
 }
